@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<script>
+    function contador(){
+    var vogais = 0
+    var b = document.getElementById("frase").value; 
+    var a = b.split("");
+    for (var i = 0; i < a.length; i++) {
+      if (a[i] == "a" || a[i] == "e" ||  a[i] == "i" || a[i] == "o" ||  a[i] == "u"   ) {
+     vogais++
+  } 
+}
+    document.getElementById("resultado").innerHTML = vogais
+
+    }
+
+</script>
+<body>
+    <input type="text"   id="frase" />
+    <button onclick="contador()"> quantas vogais</button><br>
+    Existem <a id="resultado">0</a> vogais nessas palavra
+</body>
+</html>
